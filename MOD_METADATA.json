@@ -1,0 +1,44 @@
+{
+  "schema_version": "vllm-hust-mod-metadata-v1",
+  "mod_id": "org.vllm-hust.stateaxis-speculative-decoding",
+  "repository": "stateaxis-speculative-decoding",
+  "display_name": "stateaxis-speculative-decoding",
+  "canonical_repository": "https://github.com/intellistream/stateaxis-speculative-decoding",
+  "responsibility": {
+    "organization": "intellistream",
+    "maintainers": [
+      {
+        "name": "Shuhao Zhang (Tony)",
+        "github": "ShuhaoZhangTony"
+      }
+    ],
+    "advisor_status": "not_declared",
+    "advisors": []
+  },
+  "lifecycle": {
+    "status": "experimental",
+    "default_enabled": false,
+    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
+    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+  },
+  "scope": {
+    "mechanism": "graph_compatible_speculative_decoding",
+    "supported_workloads": [],
+    "out_of_scope": [
+      "general performance claims",
+      "automatic inheritance from StateAxis aggregate evidence"
+    ]
+  },
+  "evidence": {
+    "qualification": "not-beneficial-in-tested-cell",
+    "latest_result": "evidence/ISSUE7_SPECULATIVE_DECODING_CLOSURE.md",
+    "index": "EVIDENCE.md",
+    "performance_claims": [
+      {
+        "label": "not-beneficial-in-tested-cell",
+        "scope": "frozen StateAxis source evidence only",
+        "result": "The component path worked, but the optimistic end-to-end upper bound missed the admission threshold."
+      }
+    ]
+  }
+}

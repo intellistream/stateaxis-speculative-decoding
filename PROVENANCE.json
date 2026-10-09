@@ -1,0 +1,13 @@
+{
+  "schema_version": "stateaxis-mod-provenance/v1",
+  "source_repository": "Qixin-Gaoke/stateaxis",
+  "source_commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+  "source_issues": [
+    7
+  ],
+  "source_evidence": "docs/history/reports/ISSUE7_SPECULATIVE_DECODING_CLOSURE.md",
+  "copied_evidence": "evidence/ISSUE7_SPECULATIVE_DECODING_CLOSURE.md",
+  "copied_evidence_sha256": "e462b7354304ae3a2f28c7e215941f30aafc979e871726652629237bc2395f04",
+  "qualification_inherited": false,
+  "implementation_extracted": false
+}
