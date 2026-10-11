@@ -1,0 +1,65 @@
+{
+  "schema_version": "vllm-hust-benchmark/stateaxis-mod-on-off/v1",
+  "generated_at": "2026-10-11T11:35:00Z",
+  "mod_id": "org.vllm-hust.stateaxis-speculative-decoding",
+  "release_version": "0.2.0",
+  "host": {
+    "repository": "Qixin-Gaoke/stateaxis",
+    "commit": "dddd5cbdd40597be3bc38723a46cc26de2222c5b",
+    "pull_request": 525,
+    "dirty": false
+  },
+  "activation": {
+    "manager": "vLLM-HUST Extension Manager/ECPA",
+    "manifest_schema": "0.3-experimental",
+    "research_manifest_sha256": "51f43e272c011c7300d8a3a2fff9d1147a64583264c1407281e55c7f7b7302ae",
+    "extension_manifest_sha256": "3b549e9b669349b5143baa8f222bb0f17b1aee5c38ef3492cf8f115d6c129c1d",
+    "online_launch": "REJECTED_AS_REQUIRED",
+    "component_authority_only": true
+  },
+  "mechanism": {
+    "scope": "qwen2.5-14b-bf16-physical-b32-target-verification-component",
+    "physical_batch": 32,
+    "draft_widths": [1, 2, 3, 4, 5, 6, 7, 8],
+    "target_logits_required": true,
+    "target_tokens_exact_required": true,
+    "proposal_model_included": false,
+    "acceptance_transaction_included": false,
+    "rollback_transaction_included": false,
+    "online_serving_included": false,
+    "fail_closed": true
+  },
+  "validation": {
+    "rust_check": "PASS",
+    "rust_lib_tests": {"status": "PASS", "passed": 433, "failed": 0},
+    "cpp_component_contract": "PASS",
+    "assembly_off_sha256": "8a41b6977f89d67e98993eb227bf99eaa4a42c282cfd760e19c240c2edb6c245",
+    "assembly_on_sha256": "189c82025dad8a39ca873c9dbd2465139ed084454347886acc956b653c2002b0",
+    "assembly_identity_separated": true
+  },
+  "historical_real_npu_component": {
+    "source": "StateAxis .benchmarks/qwen14b-speculative-verify-component-v163-r07/summary.json",
+    "lifecycles": 5,
+    "physical_batch": 32,
+    "draft_widths": [1, 2, 3, 4, 5, 6, 7, 8],
+    "correctness_passed": true,
+    "component_speedup_min": 1.5473311708005506,
+    "component_speedup_max": 4.1121578237414935,
+    "classification": "component_positive_not_online"
+  },
+  "historical_prompt_lookup_upper_bound": {
+    "source": "StateAxis .benchmarks/qwen14b-suffix-decoding-b32-bound-v168-r01.json",
+    "samples": 14,
+    "median_target_only_upper_bound": 1.032258064516129,
+    "serial_upper_bound_min": 1.0164104055726237,
+    "serial_upper_bound_max": 1.018702558454593,
+    "samples_above_1_05x": 0,
+    "classification": "negative_upper_bound_no_integration"
+  },
+  "current_real_online": {
+    "status": "NOT_RUN_COMPONENT_CONTRACT_FORBIDS_ONLINE_ARM",
+    "performance_result": null,
+    "performance_qualified": false
+  },
+  "claim": "The physical-B32 target-verification component is exact and faster in V163, but the frozen prompt-lookup online candidate failed even an optimistic bound. No StateAxis online speculative-decoding gain is claimed."
+}

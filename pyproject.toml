@@ -4,18 +4,21 @@ build-backend = "hatchling.build"
 
 [project]
 name = "stateaxis-speculative-decoding"
-version = "0.1.0.dev0"
-description = "stateaxis-speculative-decoding inert vLLM-HUST contract descriptor"
+version = "0.2.0"
+description = "StateAxis physical-B32 speculative target-verification component contract"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
 dependencies = []
 
 [project.optional-dependencies]
-test = ["pytest>=8", "ruff>=0.12", "vllm-hust-ext==0.2.0.dev0"]
+test = ["pytest>=8", "ruff>=0.12", "vllm-hust-ext>=0.3,<0.4"]
 
 [project.entry-points."vllm_hust.extension_bundles"]
 "org.vllm-hust.stateaxis-speculative-decoding" = "stateaxis_speculative_decoding"
+
+[project.entry-points."stateaxis.mod_handlers"]
+speculative_decoding = "stateaxis_speculative_decoding:speculative_decoding"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/stateaxis_speculative_decoding"]

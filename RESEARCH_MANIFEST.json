@@ -1,0 +1,18 @@
+{
+  "schema_version": "stateaxis-research-manifest/v1",
+  "mod_id": "org.vllm-hust.stateaxis-speculative-decoding",
+  "release_version": "0.2.0",
+  "mechanism": "identity-bound-physical-b32-target-verification-component",
+  "scope": "qwen2.5-14b-bf16-physical-b32-target-verification-component",
+  "mode": "target_verification_component_only",
+  "physical_batch": 32,
+  "draft_widths": [1, 2, 3, 4, 5, 6, 7, 8],
+  "target_logits_required": true,
+  "target_tokens_exact_required": true,
+  "proposal_model_included": false,
+  "acceptance_transaction_included": false,
+  "rollback_transaction_included": false,
+  "online_serving_included": false,
+  "fail_closed": true,
+  "performance_qualified": false
+}
