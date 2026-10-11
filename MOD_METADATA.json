@@ -2,7 +2,7 @@
   "schema_version": "vllm-hust-mod-metadata-v1",
   "mod_id": "org.vllm-hust.stateaxis-speculative-decoding",
   "repository": "stateaxis-speculative-decoding",
-  "display_name": "stateaxis-speculative-decoding",
+  "display_name": "StateAxis Speculative Target Verification",
   "canonical_repository": "https://github.com/intellistream/stateaxis-speculative-decoding",
   "responsibility": {
     "organization": "intellistream",
@@ -16,28 +16,34 @@
     "advisors": []
   },
   "lifecycle": {
-    "status": "experimental",
+    "status": "active_experimental",
     "default_enabled": false,
-    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
-    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+    "activation_contract": "Enable only through vLLM-HUST Extension Manager/ECPA with the exact Manifest 0.3 component-only payload and research-manifest digest.",
+    "rollback_contract": "Disable the extension; StateAxis retains ordinary single-token target execution and grants no speculative component authority."
   },
   "scope": {
-    "mechanism": "graph_compatible_speculative_decoding",
-    "supported_workloads": [],
+    "mechanism": "identity_bound_physical_b32_target_verification_component",
+    "supported_workloads": [
+      "Qwen2.5-14B BF16 physical-B32 target verification for draft widths K1-K8"
+    ],
     "out_of_scope": [
+      "proposal-model execution",
+      "acceptance and rollback transactions",
+      "online speculative serving",
+      "inheritance from vLLM-HUST vSpec or EAGLE results",
       "general performance claims",
       "automatic inheritance from StateAxis aggregate evidence"
     ]
   },
   "evidence": {
-    "qualification": "not-beneficial-in-tested-cell",
-    "latest_result": "evidence/ISSUE7_SPECULATIVE_DECODING_CLOSURE.md",
+    "qualification": "component-positive-prompt-lookup-upper-bound-negative-online-unqualified",
+    "latest_result": "evidence/ecpa-contract-20261011/RESULT.json",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
         "label": "not-beneficial-in-tested-cell",
-        "scope": "frozen StateAxis source evidence only",
-        "result": "The component path worked, but the optimistic end-to-end upper bound missed the admission threshold."
+        "scope": "Qwen2.5-14B BF16 physical-B32 target-verification component, K1-K8",
+        "result": "Target verification was exact and 1.547x-4.112x faster as a component, but the frozen prompt-lookup candidate's optimistic serial upper bound was only 1.016x-1.019x. No online gain is claimed."
       }
     ]
   }

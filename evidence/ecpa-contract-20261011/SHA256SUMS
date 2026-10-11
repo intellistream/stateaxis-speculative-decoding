@@ -1,0 +1,4 @@
+51f43e272c011c7300d8a3a2fff9d1147a64583264c1407281e55c7f7b7302ae  RESEARCH_MANIFEST.json
+3b549e9b669349b5143baa8f222bb0f17b1aee5c38ef3492cf8f115d6c129c1d  src/stateaxis_speculative_decoding/vllm-hust-extension-v0.3.json
+65e3763df87d2750ff48a6a477ed6c3411a8aed54d14901274011165b82a6a8d  evidence/ecpa-contract-20261011/RESULT.json
+b7db40393e2eba4437a1e5075c2fa3a7bb6d8fa39c7b2f0353da3df54198cfd8  evidence/ecpa-contract-20261011/manager-config.json
