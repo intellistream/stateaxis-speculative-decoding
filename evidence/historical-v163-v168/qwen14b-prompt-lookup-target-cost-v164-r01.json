@@ -1,0 +1,3646 @@
+{
+  "artifact_kind": "qwen14b-prompt-lookup-target-cost-projection",
+  "best": {
+    "aggregate_acceptance_rate": 0.3105072463768116,
+    "k": 3,
+    "max_n": 7,
+    "mean_pass_reduction": 0.203369140625,
+    "mean_target_cost_ns": 1100517149.296875,
+    "mean_target_passes": 25.4921875,
+    "min_n": 2,
+    "predicted_target_only_cost_reduction": 0.08640206474326095,
+    "predicted_target_only_speedup": 1.0945734019407347,
+    "proposal_length_histogram": {
+      "1": 0,
+      "2": 0,
+      "3": 920,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    }
+  },
+  "claim_boundary": "offline target-only projection over recorded ShareGPT continuations using ACLNN component medians; no proposer CPU, scheduler, PTO-plan, online, or vLLM performance claim",
+  "classification": "accepted-optimistic-target-cost-feasibility-only",
+  "cost_model": {
+    "baseline_o32_target_cost_ns": 1204596800.0,
+    "draft_verification_candidate_median_ns": {
+      "1": 48736371,
+      "2": 54179685,
+      "3": 57246873,
+      "4": 69640501,
+      "5": 71334471,
+      "6": 72543968,
+      "7": 75947940,
+      "8": 82302649
+    },
+    "proposal_cpu_cost_included": false,
+    "pto_plan_parity": false,
+    "scheduler_cost_included": false,
+    "single_target_pass_ns": 37643650.0,
+    "single_target_pass_samples_ns": [
+      37705653.0,
+      37641059.333333336,
+      37735718.0,
+      37657184.8,
+      37646240.666666664,
+      37632729.571428575,
+      37588224.625,
+      37604609.11111111
+    ]
+  },
+  "inputs": {
+    "oracle_sha256": "c08b4476074a6004775bd904937b0fd19e0b6cdda498a1734522ee44bdd4a9b1",
+    "prompt_sha256": "6a99acef712d3f792949de7f50736afce8875c7f691cb96c2efb4b3eeddca279",
+    "simulator_sha256": "6d05b1898511ae8ec8cc8696096d612c91760f3111ea98af3c04ad1650d5e40a",
+    "v162_acceptance_sha256": "e051d0cdec091289201424cd84cefc74b70ace40d6afb35e5d18229765df7cb2",
+    "v163_audit_sha256": "91d936e8167f2945c6bfa8fee2907ad2057195b5eecce0a15ae0168a10bdf2d3",
+    "v163_parent_commit": "71b79332b91d2c7fc460c4f665a1b55ff3652a4a"
+  },
+  "integration_authorized": false,
+  "performance_claim": false,
+  "revision": "r01",
+  "scan": {
+    "configs": 1088,
+    "k": [
+      1,
+      8
+    ],
+    "max_n": [
+      1,
+      16
+    ],
+    "min_n": [
+      1,
+      16
+    ]
+  },
+  "schema_version": 1,
+  "selected": [
+    {
+      "aggregate_acceptance_rate": 0.08168500641328563,
+      "k": 8,
+      "max_n": 9,
+      "mean_pass_reduction": 0.287353515625,
+      "mean_target_cost_ns": 1504862026.625,
+      "mean_target_passes": 22.8046875,
+      "min_n": 1,
+      "predicted_target_only_cost_reduction": -0.24926616659200818,
+      "predicted_target_only_speedup": 0.8004699292609476,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 3,
+        "6": 6,
+        "7": 4,
+        "8": 1840
+      },
+      "rows": [
+        {
+          "accepted": 26,
+          "ordinal": 0,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 404497896.0,
+          "target_passes": 6
+        },
+        {
+          "accepted": 14,
+          "ordinal": 1,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1168834689.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 8,
+          "ordinal": 2,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1617991584.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 8,
+          "ordinal": 3,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1484014587.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 2,
+          "ordinal": 4,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1933171482.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 7,
+          "ordinal": 5,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1610976235.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 10,
+          "ordinal": 6,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1274750290.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 14,
+          "ordinal": 7,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1161819340.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 16,
+          "ordinal": 8,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1131191039.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 16,
+          "ordinal": 9,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1086532040.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 10,
+          "ordinal": 10,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1498045285.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 6,
+          "ordinal": 11,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1648619885.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 12,
+          "ordinal": 12,
+          "proposal_passes": 12,
+          "proposed": 96,
+          "target_cost_ns": 1326424638.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 4,
+          "ordinal": 13,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1813225183.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 11,
+          "ordinal": 14,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1505060634.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 5,
+          "ordinal": 15,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1507627539.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 9,
+          "ordinal": 16,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1580347934.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 15,
+          "ordinal": 17,
+          "proposal_passes": 14,
+          "proposed": 112,
+          "target_cost_ns": 1265168036.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 4,
+          "ordinal": 18,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1813225183.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 7,
+          "ordinal": 19,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1700294233.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 9,
+          "ordinal": 20,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1580347934.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 10,
+          "ordinal": 21,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1580347934.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 5,
+          "ordinal": 22,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1820240532.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 1,
+          "ordinal": 23,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1926156133.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 11,
+          "ordinal": 24,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1371083637.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 14,
+          "ordinal": 25,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1429773334.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 8,
+          "ordinal": 26,
+          "proposal_passes": 15,
+          "proposed": 117,
+          "target_cost_ns": 1600008057.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 20,
+          "ordinal": 27,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 980616439.0,
+          "target_passes": 13
+        },
+        {
+          "accepted": 9,
+          "ordinal": 28,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1625006933.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 11,
+          "ordinal": 29,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1460401635.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 9,
+          "ordinal": 30,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1625006933.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 7,
+          "ordinal": 31,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1610976235.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 3,
+          "ordinal": 32,
+          "proposal_passes": 18,
+          "proposed": 141,
+          "target_cost_ns": 1879414442.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 6,
+          "ordinal": 33,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1737937883.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 11,
+          "ordinal": 34,
+          "proposal_passes": 19,
+          "proposed": 152,
+          "target_cost_ns": 1639037631.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 1,
+          "ordinal": 35,
+          "proposal_passes": 10,
+          "proposed": 79,
+          "target_cost_ns": 1607188431.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 12,
+          "ordinal": 36,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1594378632.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 6,
+          "ordinal": 37,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1693278884.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 11,
+          "ordinal": 38,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1549719633.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 1,
+          "ordinal": 39,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1970815132.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 2,
+          "ordinal": 40,
+          "proposal_passes": 17,
+          "proposed": 132,
+          "target_cost_ns": 1875850335.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 5,
+          "ordinal": 41,
+          "proposal_passes": 22,
+          "proposed": 176,
+          "target_cost_ns": 1998876528.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 3,
+          "ordinal": 42,
+          "proposal_passes": 22,
+          "proposed": 176,
+          "target_cost_ns": 2074163828.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 6,
+          "ordinal": 43,
+          "proposal_passes": 15,
+          "proposed": 118,
+          "target_cost_ns": 1638861204.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 12,
+          "ordinal": 44,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1467416984.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 6,
+          "ordinal": 45,
+          "proposal_passes": 20,
+          "proposed": 160,
+          "target_cost_ns": 1871914880.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 4,
+          "ordinal": 46,
+          "proposal_passes": 21,
+          "proposed": 168,
+          "target_cost_ns": 1991861179.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 5,
+          "ordinal": 47,
+          "proposal_passes": 19,
+          "proposed": 152,
+          "target_cost_ns": 1864899531.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 14,
+          "ordinal": 48,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1385114335.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 6,
+          "ordinal": 49,
+          "proposal_passes": 16,
+          "proposed": 124,
+          "target_cost_ns": 1675955997.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 0,
+          "ordinal": 50,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1919140784.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 12,
+          "ordinal": 51,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1333439987.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 7,
+          "ordinal": 52,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1744953232.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 9,
+          "ordinal": 53,
+          "proposal_passes": 19,
+          "proposed": 152,
+          "target_cost_ns": 1714324931.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 13,
+          "ordinal": 54,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1429773334.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 14,
+          "ordinal": 55,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1429773334.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 2,
+          "ordinal": 56,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1799194485.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 2,
+          "ordinal": 57,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1933171482.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 14,
+          "ordinal": 58,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1168834689.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 13,
+          "ordinal": 59,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1429773334.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 8,
+          "ordinal": 60,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1662650583.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 18,
+          "ordinal": 61,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1145221737.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 10,
+          "ordinal": 62,
+          "proposal_passes": 20,
+          "proposed": 158,
+          "target_cost_ns": 1749225249.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 18,
+          "ordinal": 63,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 966585741.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 8,
+          "ordinal": 64,
+          "proposal_passes": 17,
+          "proposed": 132,
+          "target_cost_ns": 1680776871.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 16,
+          "ordinal": 65,
+          "proposal_passes": 12,
+          "proposed": 96,
+          "target_cost_ns": 1138206388.0,
+          "target_passes": 16
+        },
+        {
+          "accepted": 2,
+          "ordinal": 66,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1843853484.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 2,
+          "ordinal": 67,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1933171482.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 2,
+          "ordinal": 68,
+          "proposal_passes": 21,
+          "proposed": 168,
+          "target_cost_ns": 2067148479.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 20,
+          "ordinal": 69,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 846639442.0,
+          "target_passes": 13
+        },
+        {
+          "accepted": 7,
+          "ordinal": 70,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1744953232.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 7,
+          "ordinal": 71,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1737937883.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 4,
+          "ordinal": 72,
+          "proposal_passes": 14,
+          "proposed": 112,
+          "target_cost_ns": 1679248186.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 19,
+          "ordinal": 73,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 928942091.0,
+          "target_passes": 14
+        },
+        {
+          "accepted": 10,
+          "ordinal": 74,
+          "proposal_passes": 10,
+          "proposed": 64,
+          "target_cost_ns": 1234159424.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 19,
+          "ordinal": 75,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 973601090.0,
+          "target_passes": 14
+        },
+        {
+          "accepted": 15,
+          "ordinal": 76,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1220509037.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 8,
+          "ordinal": 77,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1744953232.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 11,
+          "ordinal": 78,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1460401635.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 3,
+          "ordinal": 79,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1672232837.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 7,
+          "ordinal": 80,
+          "proposal_passes": 14,
+          "proposed": 112,
+          "target_cost_ns": 1566317236.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 17,
+          "ordinal": 81,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 966585741.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 11,
+          "ordinal": 82,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1147788642.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 9,
+          "ordinal": 83,
+          "proposal_passes": 14,
+          "proposed": 112,
+          "target_cost_ns": 1491029936.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 6,
+          "ordinal": 84,
+          "proposal_passes": 19,
+          "proposed": 152,
+          "target_cost_ns": 1827255881.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 17,
+          "ordinal": 85,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1272183385.0,
+          "target_passes": 16
+        },
+        {
+          "accepted": 23,
+          "ordinal": 86,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 696064842.0,
+          "target_passes": 9
+        },
+        {
+          "accepted": 6,
+          "ordinal": 87,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1737937883.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 1,
+          "ordinal": 88,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1613543140.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 12,
+          "ordinal": 89,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1333439987.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 21,
+          "ordinal": 90,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 771352142.0,
+          "target_passes": 11
+        },
+        {
+          "accepted": 7,
+          "ordinal": 91,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1610976235.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 19,
+          "ordinal": 92,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 891298441.0,
+          "target_passes": 13
+        },
+        {
+          "accepted": 9,
+          "ordinal": 93,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1580347934.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 18,
+          "ordinal": 94,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1145221737.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 10,
+          "ordinal": 95,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1319409289.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 20,
+          "ordinal": 96,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 898313790.0,
+          "target_passes": 12
+        },
+        {
+          "accepted": 18,
+          "ordinal": 97,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 966585741.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 10,
+          "ordinal": 98,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1319409289.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 3,
+          "ordinal": 99,
+          "proposal_passes": 20,
+          "proposed": 160,
+          "target_cost_ns": 2022489480.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 7,
+          "ordinal": 100,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1744953232.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 9,
+          "ordinal": 101,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1535688935.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 2,
+          "ordinal": 102,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1575899490.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 3,
+          "ordinal": 103,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1895527832.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 3,
+          "ordinal": 104,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1582914839.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 2,
+          "ordinal": 105,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1888512483.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 4,
+          "ordinal": 106,
+          "proposal_passes": 18,
+          "proposed": 144,
+          "target_cost_ns": 1857884182.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 12,
+          "ordinal": 107,
+          "proposal_passes": 14,
+          "proposed": 112,
+          "target_cost_ns": 1378098986.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 9,
+          "ordinal": 108,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1625006933.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 8,
+          "ordinal": 109,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1662650583.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 3,
+          "ordinal": 110,
+          "proposal_passes": 19,
+          "proposed": 152,
+          "target_cost_ns": 1940186831.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 16,
+          "ordinal": 111,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1220509037.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 5,
+          "ordinal": 112,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1596945537.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 4,
+          "ordinal": 113,
+          "proposal_passes": 16,
+          "proposed": 128,
+          "target_cost_ns": 1768566184.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 4,
+          "ordinal": 114,
+          "proposal_passes": 20,
+          "proposed": 160,
+          "target_cost_ns": 1984845830.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 3,
+          "ordinal": 115,
+          "proposal_passes": 17,
+          "proposed": 136,
+          "target_cost_ns": 1888512483.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 2,
+          "ordinal": 116,
+          "proposal_passes": 15,
+          "proposed": 110,
+          "target_cost_ns": 1753748634.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 28,
+          "ordinal": 117,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 366854246.0,
+          "target_passes": 5
+        },
+        {
+          "accepted": 8,
+          "ordinal": 118,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1350037590.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 19,
+          "ordinal": 119,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 750306095.0,
+          "target_passes": 14
+        },
+        {
+          "accepted": 4,
+          "ordinal": 120,
+          "proposal_passes": 12,
+          "proposed": 96,
+          "target_cost_ns": 1589930188.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 21,
+          "ordinal": 121,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 860670140.0,
+          "target_passes": 11
+        },
+        {
+          "accepted": 9,
+          "ordinal": 122,
+          "proposal_passes": 14,
+          "proposed": 112,
+          "target_cost_ns": 1528673586.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 8,
+          "ordinal": 123,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1484014587.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 5,
+          "ordinal": 124,
+          "proposal_passes": 19,
+          "proposed": 150,
+          "target_cost_ns": 1855140850.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 20,
+          "ordinal": 125,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 846639442.0,
+          "target_passes": 13
+        },
+        {
+          "accepted": 13,
+          "ordinal": 126,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1422757985.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 10,
+          "ordinal": 127,
+          "proposal_passes": 15,
+          "proposed": 120,
+          "target_cost_ns": 1498045285.0,
+          "target_passes": 22
+        }
+      ]
+    },
+    {
+      "aggregate_acceptance_rate": 0.5189003436426117,
+      "k": 1,
+      "max_n": 4,
+      "mean_pass_reduction": 0.143798828125,
+      "mean_target_cost_ns": 1132251623.390625,
+      "mean_target_passes": 27.3984375,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.060057586579488675,
+      "predicted_target_only_speedup": 1.0638949639062836,
+      "proposal_length_histogram": {
+        "1": 1164,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "rows": [
+        {
+          "accepted": 14,
+          "ordinal": 0,
+          "proposal_passes": 15,
+          "proposed": 15,
+          "target_cost_ns": 843976515.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 8,
+          "ordinal": 1,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1014374810.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 5,
+          "ordinal": 2,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 1138398481.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 4,
+          "ordinal": 3,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1142763968.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 1,
+          "ordinal": 4,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1211324034.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 3,
+          "ordinal": 5,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1147129455.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 6,
+          "ordinal": 6,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1067476668.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 7,
+          "ordinal": 7,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1040925739.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 8,
+          "ordinal": 8,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1096389344.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 10,
+          "ordinal": 9,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1010009323.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 5,
+          "ordinal": 10,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1094027597.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 2,
+          "ordinal": 11,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1206958547.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 7,
+          "ordinal": 12,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1089662110.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 2,
+          "ordinal": 13,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1195865826.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 6,
+          "ordinal": 14,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 1111847552.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 3,
+          "ordinal": 15,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1158222176.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 5,
+          "ordinal": 16,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1127305760.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 7,
+          "ordinal": 17,
+          "proposal_passes": 16,
+          "proposed": 16,
+          "target_cost_ns": 1118574786.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 0,
+          "ordinal": 18,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1293338568.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 3,
+          "ordinal": 19,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1169314897.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 2,
+          "ordinal": 20,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1240236710.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 6,
+          "ordinal": 21,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1127305760.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 3,
+          "ordinal": 22,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1180407618.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 0,
+          "ordinal": 23,
+          "proposal_passes": 2,
+          "proposed": 2,
+          "target_cost_ns": 1226782242.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 6,
+          "ordinal": 24,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1089662110.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 7,
+          "ordinal": 25,
+          "proposal_passes": 15,
+          "proposed": 15,
+          "target_cost_ns": 1107482065.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 3,
+          "ordinal": 26,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1191500339.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 9,
+          "ordinal": 27,
+          "proposal_passes": 17,
+          "proposed": 17,
+          "target_cost_ns": 1054380207.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 5,
+          "ordinal": 28,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1116213039.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 5,
+          "ordinal": 29,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 1138398481.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 4,
+          "ordinal": 30,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1164949410.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 3,
+          "ordinal": 31,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1136036734.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 2,
+          "ordinal": 32,
+          "proposal_passes": 3,
+          "proposed": 3,
+          "target_cost_ns": 1162587663.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 4,
+          "ordinal": 33,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1142763968.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 6,
+          "ordinal": 34,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1134032994.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 1,
+          "ordinal": 35,
+          "proposal_passes": 1,
+          "proposed": 1,
+          "target_cost_ns": 1178045871.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 6,
+          "ordinal": 36,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1122940273.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 3,
+          "ordinal": 37,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1158222176.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 6,
+          "ordinal": 38,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 1100754831.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 1,
+          "ordinal": 39,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1222416755.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 1,
+          "ordinal": 40,
+          "proposal_passes": 2,
+          "proposed": 2,
+          "target_cost_ns": 1189138592.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 2,
+          "ordinal": 41,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1218051268.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 2,
+          "ordinal": 42,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 1251329431.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 4,
+          "ordinal": 43,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1142763968.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 7,
+          "ordinal": 44,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1085296623.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 4,
+          "ordinal": 45,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1209320294.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 3,
+          "ordinal": 46,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1191500339.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 3,
+          "ordinal": 47,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1202593060.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 8,
+          "ordinal": 48,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1096389344.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 1,
+          "ordinal": 49,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1244602197.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 0,
+          "ordinal": 50,
+          "proposal_passes": 1,
+          "proposed": 1,
+          "target_cost_ns": 1215689521.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 4,
+          "ordinal": 51,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 1187134852.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 2,
+          "ordinal": 52,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1218051268.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 6,
+          "ordinal": 53,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1122940273.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 5,
+          "ordinal": 54,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 1149491202.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 7,
+          "ordinal": 55,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1096389344.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 0,
+          "ordinal": 56,
+          "proposal_passes": 2,
+          "proposed": 2,
+          "target_cost_ns": 1226782242.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 1,
+          "ordinal": 57,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1211324034.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 6,
+          "ordinal": 58,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1089662110.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 6,
+          "ordinal": 59,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1089662110.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 3,
+          "ordinal": 60,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1191500339.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 10,
+          "ordinal": 61,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1021102044.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 4,
+          "ordinal": 62,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1235871223.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 9,
+          "ordinal": 63,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1058745694.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 5,
+          "ordinal": 64,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1142763968.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 8,
+          "ordinal": 65,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 1036560252.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 0,
+          "ordinal": 66,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1248967684.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 0,
+          "ordinal": 67,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1271153126.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 1,
+          "ordinal": 68,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1222416755.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 11,
+          "ordinal": 69,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 923629302.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 4,
+          "ordinal": 70,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1142763968.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 3,
+          "ordinal": 71,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1191500339.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 2,
+          "ordinal": 72,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1184773105.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 10,
+          "ordinal": 73,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 998916602.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 6,
+          "ordinal": 74,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1045291226.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 10,
+          "ordinal": 75,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 961272952.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 8,
+          "ordinal": 76,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1058745694.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 3,
+          "ordinal": 77,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1202593060.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 7,
+          "ordinal": 78,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1052018460.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 1,
+          "ordinal": 79,
+          "proposal_passes": 3,
+          "proposed": 3,
+          "target_cost_ns": 1200231313.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 4,
+          "ordinal": 80,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1131671247.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 9,
+          "ordinal": 81,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 998916602.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 5,
+          "ordinal": 82,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1105120318.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 3,
+          "ordinal": 83,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1180407618.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 3,
+          "ordinal": 84,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1202593060.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 10,
+          "ordinal": 85,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1010009323.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 11,
+          "ordinal": 86,
+          "proposal_passes": 17,
+          "proposed": 17,
+          "target_cost_ns": 979092907.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 2,
+          "ordinal": 87,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1173680384.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 0,
+          "ordinal": 88,
+          "proposal_passes": 1,
+          "proposed": 1,
+          "target_cost_ns": 1215689521.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 5,
+          "ordinal": 89,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1094027597.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 11,
+          "ordinal": 90,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 945814744.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 2,
+          "ordinal": 91,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1229143989.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 9,
+          "ordinal": 92,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1021102044.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 4,
+          "ordinal": 93,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1198227573.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 8,
+          "ordinal": 94,
+          "proposal_passes": 14,
+          "proposed": 14,
+          "target_cost_ns": 1058745694.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 6,
+          "ordinal": 95,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1056383947.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 10,
+          "ordinal": 96,
+          "proposal_passes": 17,
+          "proposed": 17,
+          "target_cost_ns": 1016736557.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 9,
+          "ordinal": 97,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 976731160.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 5,
+          "ordinal": 98,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1116213039.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 1,
+          "ordinal": 99,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1282245847.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 4,
+          "ordinal": 100,
+          "proposal_passes": 9,
+          "proposed": 9,
+          "target_cost_ns": 1153856689.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 4,
+          "ordinal": 101,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1131671247.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 0,
+          "ordinal": 102,
+          "proposal_passes": 2,
+          "proposed": 2,
+          "target_cost_ns": 1226782242.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 0,
+          "ordinal": 103,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1293338568.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 1,
+          "ordinal": 104,
+          "proposal_passes": 3,
+          "proposed": 3,
+          "target_cost_ns": 1200231313.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 1,
+          "ordinal": 105,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1233509476.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 0,
+          "ordinal": 106,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1293338568.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 5,
+          "ordinal": 107,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 1138398481.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 4,
+          "ordinal": 108,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1164949410.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 3,
+          "ordinal": 109,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 1213685781.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 2,
+          "ordinal": 110,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1184773105.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 8,
+          "ordinal": 111,
+          "proposal_passes": 13,
+          "proposed": 13,
+          "target_cost_ns": 1047652973.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 2,
+          "ordinal": 112,
+          "proposal_passes": 6,
+          "proposed": 6,
+          "target_cost_ns": 1195865826.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 1,
+          "ordinal": 113,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1222416755.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 1,
+          "ordinal": 114,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1211324034.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 2,
+          "ordinal": 115,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1222416755.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 0,
+          "ordinal": 116,
+          "proposal_passes": 4,
+          "proposed": 4,
+          "target_cost_ns": 1248967684.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 15,
+          "ordinal": 117,
+          "proposal_passes": 16,
+          "proposed": 16,
+          "target_cost_ns": 817425586.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 3,
+          "ordinal": 118,
+          "proposal_passes": 7,
+          "proposed": 7,
+          "target_cost_ns": 1169314897.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 11,
+          "ordinal": 119,
+          "proposal_passes": 11,
+          "proposed": 11,
+          "target_cost_ns": 950180231.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 4,
+          "ordinal": 120,
+          "proposal_passes": 5,
+          "proposed": 5,
+          "target_cost_ns": 1109485805.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 14,
+          "ordinal": 121,
+          "proposal_passes": 17,
+          "proposed": 17,
+          "target_cost_ns": 866161957.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 6,
+          "ordinal": 122,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1127305760.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 6,
+          "ordinal": 123,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1067476668.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 4,
+          "ordinal": 124,
+          "proposal_passes": 8,
+          "proposed": 8,
+          "target_cost_ns": 1142763968.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 9,
+          "ordinal": 125,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 998916602.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 7,
+          "ordinal": 126,
+          "proposal_passes": 12,
+          "proposed": 12,
+          "target_cost_ns": 1074203902.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 5,
+          "ordinal": 127,
+          "proposal_passes": 10,
+          "proposed": 10,
+          "target_cost_ns": 1127305760.0,
+          "target_passes": 27
+        }
+      ]
+    },
+    {
+      "aggregate_acceptance_rate": 0.14544623819677124,
+      "k": 8,
+      "max_n": 4,
+      "mean_pass_reduction": 0.226806640625,
+      "mean_target_cost_ns": 1217947839.1796875,
+      "mean_target_passes": 24.7421875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": -0.011083409137138345,
+      "predicted_target_only_speedup": 0.9890380862380119,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 4,
+        "7": 1,
+        "8": 815
+      },
+      "rows": [
+        {
+          "accepted": 25,
+          "ordinal": 0,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 442141546.0,
+          "target_passes": 7
+        },
+        {
+          "accepted": 13,
+          "ordinal": 1,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 938524345.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 6,
+          "ordinal": 2,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1425324890.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 7,
+          "ordinal": 3,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1164386245.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 1,
+          "ordinal": 4,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1345589146.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 4,
+          "ordinal": 5,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1232658196.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 9,
+          "ordinal": 6,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1089098945.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 13,
+          "ordinal": 7,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 931508996.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 12,
+          "ordinal": 8,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1237106640.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 16,
+          "ordinal": 9,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 952555043.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 9,
+          "ordinal": 10,
+          "proposal_passes": 3,
+          "proposed": 24,
+          "target_cost_ns": 999780947.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 3,
+          "ordinal": 11,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1359619844.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 10,
+          "ordinal": 12,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1178416943.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 3,
+          "ordinal": 13,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1314960845.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 9,
+          "ordinal": 14,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1267734941.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 3,
+          "ordinal": 15,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1359619844.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 7,
+          "ordinal": 16,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1298363242.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 12,
+          "ordinal": 17,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1244121989.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 0,
+          "ordinal": 18,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1561868792.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 4,
+          "ordinal": 19,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1321976194.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 4,
+          "ordinal": 20,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1411294192.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 8,
+          "ordinal": 21,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1298363242.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 4,
+          "ordinal": 22,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1366635193.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 0,
+          "ordinal": 23,
+          "proposal_passes": 2,
+          "proposed": 16,
+          "target_cost_ns": 1293914798.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 8,
+          "ordinal": 24,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1260719592.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 12,
+          "ordinal": 25,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1281765639.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 5,
+          "ordinal": 26,
+          "proposal_passes": 8,
+          "proposed": 61,
+          "target_cost_ns": 1400326014.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 17,
+          "ordinal": 27,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1048888390.0,
+          "target_passes": 16
+        },
+        {
+          "accepted": 7,
+          "ordinal": 28,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1253704243.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 7,
+          "ordinal": 29,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1343022241.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 8,
+          "ordinal": 30,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1171401594.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 5,
+          "ordinal": 31,
+          "proposal_passes": 2,
+          "proposed": 16,
+          "target_cost_ns": 1105696548.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 2,
+          "ordinal": 32,
+          "proposal_passes": 3,
+          "proposed": 23,
+          "target_cost_ns": 1256931788.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 5,
+          "ordinal": 33,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1328991543.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 11,
+          "ordinal": 34,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1192447641.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 1,
+          "ordinal": 35,
+          "proposal_passes": 1,
+          "proposed": 8,
+          "target_cost_ns": 1211612149.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 10,
+          "ordinal": 36,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1312393940.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 5,
+          "ordinal": 37,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1195014546.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 8,
+          "ordinal": 38,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1305378591.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 1,
+          "ordinal": 39,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1390248145.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 1,
+          "ordinal": 40,
+          "proposal_passes": 2,
+          "proposed": 12,
+          "target_cost_ns": 1243609000.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 3,
+          "ordinal": 41,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1404278843.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 2,
+          "ordinal": 42,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1620558489.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 5,
+          "ordinal": 43,
+          "proposal_passes": 7,
+          "proposed": 54,
+          "target_cost_ns": 1319232862.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 10,
+          "ordinal": 44,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1274750290.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 5,
+          "ordinal": 45,
+          "proposal_passes": 13,
+          "proposed": 104,
+          "target_cost_ns": 1596945537.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 3,
+          "ordinal": 46,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1493596841.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 4,
+          "ordinal": 47,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1455953191.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 13,
+          "ordinal": 48,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1154803991.0,
+          "target_passes": 20
+        },
+        {
+          "accepted": 2,
+          "ordinal": 49,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1397263494.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 0,
+          "ordinal": 50,
+          "proposal_passes": 1,
+          "proposed": 8,
+          "target_cost_ns": 1249255799.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 6,
+          "ordinal": 51,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1425324890.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 3,
+          "ordinal": 52,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1404278843.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 7,
+          "ordinal": 53,
+          "proposal_passes": 12,
+          "proposed": 96,
+          "target_cost_ns": 1476999238.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 9,
+          "ordinal": 54,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1223075942.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 10,
+          "ordinal": 55,
+          "proposal_passes": 11,
+          "proposed": 88,
+          "target_cost_ns": 1319409289.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 0,
+          "ordinal": 56,
+          "proposal_passes": 2,
+          "proposed": 16,
+          "target_cost_ns": 1293914798.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 1,
+          "ordinal": 57,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1345589146.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 10,
+          "ordinal": 58,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1096114294.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 9,
+          "ordinal": 59,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1178416943.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 4,
+          "ordinal": 60,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1411294192.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 17,
+          "ordinal": 61,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 914911393.0,
+          "target_passes": 16
+        },
+        {
+          "accepted": 6,
+          "ordinal": 62,
+          "proposal_passes": 11,
+          "proposed": 86,
+          "target_cost_ns": 1497868858.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 15,
+          "ordinal": 63,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 952555043.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 6,
+          "ordinal": 64,
+          "proposal_passes": 7,
+          "proposed": 54,
+          "target_cost_ns": 1319232862.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 14,
+          "ordinal": 65,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 945539694.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 0,
+          "ordinal": 66,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1383232796.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 0,
+          "ordinal": 67,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1472550794.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 1,
+          "ordinal": 68,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1390248145.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 19,
+          "ordinal": 69,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 750306095.0,
+          "target_passes": 14
+        },
+        {
+          "accepted": 5,
+          "ordinal": 70,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1328991543.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 5,
+          "ordinal": 71,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1328991543.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 3,
+          "ordinal": 72,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1270301846.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 17,
+          "ordinal": 73,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 743290746.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 8,
+          "ordinal": 74,
+          "proposal_passes": 5,
+          "proposed": 30,
+          "target_cost_ns": 1114274693.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 17,
+          "ordinal": 75,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 870252394.0,
+          "target_passes": 16
+        },
+        {
+          "accepted": 14,
+          "ordinal": 76,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1034857692.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 4,
+          "ordinal": 77,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1455953191.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 11,
+          "ordinal": 78,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1058470644.0,
+          "target_passes": 21
+        },
+        {
+          "accepted": 1,
+          "ordinal": 79,
+          "proposal_passes": 3,
+          "proposed": 24,
+          "target_cost_ns": 1300930147.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 7,
+          "ordinal": 80,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1119727246.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 15,
+          "ordinal": 81,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 907896044.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 8,
+          "ordinal": 82,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1126742595.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 5,
+          "ordinal": 83,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1284332544.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 5,
+          "ordinal": 84,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1373650542.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 16,
+          "ordinal": 85,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 952555043.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 21,
+          "ordinal": 86,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 726693143.0,
+          "target_passes": 11
+        },
+        {
+          "accepted": 3,
+          "ordinal": 87,
+          "proposal_passes": 3,
+          "proposed": 24,
+          "target_cost_ns": 1225642847.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 0,
+          "ordinal": 88,
+          "proposal_passes": 1,
+          "proposed": 8,
+          "target_cost_ns": 1249255799.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 9,
+          "ordinal": 89,
+          "proposal_passes": 3,
+          "proposed": 24,
+          "target_cost_ns": 999780947.0,
+          "target_passes": 23
+        },
+        {
+          "accepted": 20,
+          "ordinal": 90,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 675018795.0,
+          "target_passes": 12
+        },
+        {
+          "accepted": 2,
+          "ordinal": 91,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1531240491.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 17,
+          "ordinal": 92,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 832608744.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 7,
+          "ordinal": 93,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 1387681240.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 15,
+          "ordinal": 94,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 952555043.0,
+          "target_passes": 17
+        },
+        {
+          "accepted": 10,
+          "ordinal": 95,
+          "proposal_passes": 3,
+          "proposed": 24,
+          "target_cost_ns": 962137297.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 18,
+          "ordinal": 96,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 928942091.0,
+          "target_passes": 14
+        },
+        {
+          "accepted": 15,
+          "ordinal": 97,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 900880695.0,
+          "target_passes": 18
+        },
+        {
+          "accepted": 8,
+          "ordinal": 98,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1171401594.0,
+          "target_passes": 24
+        },
+        {
+          "accepted": 1,
+          "ordinal": 99,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1517209793.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 6,
+          "ordinal": 100,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1291347893.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 7,
+          "ordinal": 101,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1119727246.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 0,
+          "ordinal": 102,
+          "proposal_passes": 2,
+          "proposed": 16,
+          "target_cost_ns": 1293914798.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 0,
+          "ordinal": 103,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1561868792.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 1,
+          "ordinal": 104,
+          "proposal_passes": 3,
+          "proposed": 24,
+          "target_cost_ns": 1300930147.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 1,
+          "ordinal": 105,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1434907144.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 0,
+          "ordinal": 106,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1561868792.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 10,
+          "ordinal": 107,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1096114294.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 7,
+          "ordinal": 108,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1253704243.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 5,
+          "ordinal": 109,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1418309541.0,
+          "target_passes": 27
+        },
+        {
+          "accepted": 3,
+          "ordinal": 110,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1270301846.0,
+          "target_passes": 29
+        },
+        {
+          "accepted": 14,
+          "ordinal": 111,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1072501342.0,
+          "target_passes": 19
+        },
+        {
+          "accepted": 2,
+          "ordinal": 112,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1397263494.0,
+          "target_passes": 30
+        },
+        {
+          "accepted": 1,
+          "ordinal": 113,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1390248145.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 1,
+          "ordinal": 114,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1345589146.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 2,
+          "ordinal": 115,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1390248145.0,
+          "target_passes": 31
+        },
+        {
+          "accepted": 0,
+          "ordinal": 116,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 1383232796.0,
+          "target_passes": 32
+        },
+        {
+          "accepted": 28,
+          "ordinal": 117,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 366854246.0,
+          "target_passes": 5
+        },
+        {
+          "accepted": 4,
+          "ordinal": 118,
+          "proposal_passes": 6,
+          "proposed": 48,
+          "target_cost_ns": 1321976194.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 18,
+          "ordinal": 119,
+          "proposal_passes": 4,
+          "proposed": 32,
+          "target_cost_ns": 743290746.0,
+          "target_passes": 15
+        },
+        {
+          "accepted": 4,
+          "ordinal": 120,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 1277317195.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 21,
+          "ordinal": 121,
+          "proposal_passes": 10,
+          "proposed": 80,
+          "target_cost_ns": 860670140.0,
+          "target_passes": 11
+        },
+        {
+          "accepted": 8,
+          "ordinal": 122,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1298363242.0,
+          "target_passes": 25
+        },
+        {
+          "accepted": 6,
+          "ordinal": 123,
+          "proposal_passes": 8,
+          "proposed": 64,
+          "target_cost_ns": 1336006892.0,
+          "target_passes": 26
+        },
+        {
+          "accepted": 4,
+          "ordinal": 124,
+          "proposal_passes": 8,
+          "proposed": 62,
+          "target_cost_ns": 1401535511.0,
+          "target_passes": 28
+        },
+        {
+          "accepted": 17,
+          "ordinal": 125,
+          "proposal_passes": 5,
+          "proposed": 40,
+          "target_cost_ns": 825593395.0,
+          "target_passes": 16
+        },
+        {
+          "accepted": 11,
+          "ordinal": 126,
+          "proposal_passes": 9,
+          "proposed": 72,
+          "target_cost_ns": 1230091291.0,
+          "target_passes": 22
+        },
+        {
+          "accepted": 8,
+          "ordinal": 127,
+          "proposal_passes": 7,
+          "proposed": 56,
+          "target_cost_ns": 1216060593.0,
+          "target_passes": 24
+        }
+      ]
+    }
+  ],
+  "top_20": [
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 7,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 8,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 9,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 10,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 11,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 12,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 13,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 14,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 15,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3105072463768116,
+      "k": 3,
+      "max_n": 16,
+      "mean_pass_reduction": 0.203369140625,
+      "mean_target_cost_ns": 1100517149.296875,
+      "mean_target_passes": 25.4921875,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08640206474326095,
+      "predicted_target_only_speedup": 1.0945734019407347,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 920,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.30980817951501993,
+      "k": 3,
+      "max_n": 6,
+      "mean_pass_reduction": 0.203125,
+      "mean_target_cost_ns": 1100964390.4921875,
+      "mean_target_passes": 25.5,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08603078599230252,
+      "predicted_target_only_speedup": 1.0941287569359837,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 921,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3077200577200577,
+      "k": 3,
+      "max_n": 5,
+      "mean_pass_reduction": 0.202392578125,
+      "mean_target_cost_ns": 1102306114.078125,
+      "mean_target_passes": 25.5234375,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08491694973942732,
+      "predicted_target_only_speedup": 1.0927969868038174,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 924,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.307027027027027,
+      "k": 3,
+      "max_n": 3,
+      "mean_pass_reduction": 0.2021484375,
+      "mean_target_cost_ns": 1102753355.2734375,
+      "mean_target_passes": 25.53125,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08454567098846888,
+      "predicted_target_only_speedup": 1.092353783590447,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 925,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.30633549316054715,
+      "k": 3,
+      "max_n": 4,
+      "mean_pass_reduction": 0.201904296875,
+      "mean_target_cost_ns": 1103200596.46875,
+      "mean_target_passes": 25.5390625,
+      "min_n": 2,
+      "predicted_target_only_cost_reduction": 0.08417439223751055,
+      "predicted_target_only_speedup": 1.091910939729194,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 926,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3979721166032953,
+      "k": 3,
+      "max_n": 10,
+      "mean_pass_reduction": 0.149169921875,
+      "mean_target_cost_ns": 1105464183.96875,
+      "mean_target_passes": 27.2265625,
+      "min_n": 3,
+      "predicted_target_only_cost_reduction": 0.08229526762087525,
+      "predicted_target_only_speedup": 1.0896751043307003,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 526,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3979721166032953,
+      "k": 3,
+      "max_n": 11,
+      "mean_pass_reduction": 0.149169921875,
+      "mean_target_cost_ns": 1105464183.96875,
+      "mean_target_passes": 27.2265625,
+      "min_n": 3,
+      "predicted_target_only_cost_reduction": 0.08229526762087525,
+      "predicted_target_only_speedup": 1.0896751043307003,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 526,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3979721166032953,
+      "k": 3,
+      "max_n": 12,
+      "mean_pass_reduction": 0.149169921875,
+      "mean_target_cost_ns": 1105464183.96875,
+      "mean_target_passes": 27.2265625,
+      "min_n": 3,
+      "predicted_target_only_cost_reduction": 0.08229526762087525,
+      "predicted_target_only_speedup": 1.0896751043307003,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 526,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3979721166032953,
+      "k": 3,
+      "max_n": 13,
+      "mean_pass_reduction": 0.149169921875,
+      "mean_target_cost_ns": 1105464183.96875,
+      "mean_target_passes": 27.2265625,
+      "min_n": 3,
+      "predicted_target_only_cost_reduction": 0.08229526762087525,
+      "predicted_target_only_speedup": 1.0896751043307003,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 526,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3979721166032953,
+      "k": 3,
+      "max_n": 14,
+      "mean_pass_reduction": 0.149169921875,
+      "mean_target_cost_ns": 1105464183.96875,
+      "mean_target_passes": 27.2265625,
+      "min_n": 3,
+      "predicted_target_only_cost_reduction": 0.08229526762087525,
+      "predicted_target_only_speedup": 1.0896751043307003,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 526,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    },
+    {
+      "aggregate_acceptance_rate": 0.3979721166032953,
+      "k": 3,
+      "max_n": 15,
+      "mean_pass_reduction": 0.149169921875,
+      "mean_target_cost_ns": 1105464183.96875,
+      "mean_target_passes": 27.2265625,
+      "min_n": 3,
+      "predicted_target_only_cost_reduction": 0.08229526762087525,
+      "predicted_target_only_speedup": 1.0896751043307003,
+      "proposal_length_histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 526,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      }
+    }
+  ],
+  "version": "V164"
+}
