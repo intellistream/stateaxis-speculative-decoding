@@ -30,6 +30,7 @@ showed 1.547x at K1 through 4.112x at K8. This is component-cost evidence only.
 For the frozen prompt-lookup proposal, V168's optimistic serial upper bound was
 only 1.016x-1.019x and no sample exceeded 1.05x, so it could not meet the 1.20x
 admission gate. No online throughput gain is claimed. See [EVIDENCE.md](EVIDENCE.md).
+The full V163-V168 chain is vendored under `evidence/historical-v163-v168/`.
 
 ## Validate
 

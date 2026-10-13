@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "artifact_sha256": "b62c009f4bfe24b96688b5ac4d01fd60e3d92348067e43e4035a01d9efc5f1e1",
+  "accepted": true,
+  "classification": "accepted-hardware-component-cost-only",
+  "parent_commit": "71b79332b91d2c7fc460c4f665a1b55ff3652a4a",
+  "results": [
+    {
+      "draft_tokens": 1,
+      "verification_rows": 2,
+      "control_ns": [
+        75500496,
+        75724488,
+        75411306,
+        75317125,
+        75367435
+      ],
+      "candidate_ns": [
+        48775602,
+        51570778,
+        46366616,
+        48736371,
+        48647630
+      ],
+      "control_median_ns": 75411306,
+      "candidate_median_ns": 48736371,
+      "component_speedup": 1.5473311708005506,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 2,
+      "verification_rows": 3,
+      "control_ns": [
+        112920497,
+        113613362,
+        113144130,
+        112923178,
+        112838419
+      ],
+      "candidate_ns": [
+        54179685,
+        57267634,
+        55013070,
+        51407608,
+        53174149
+      ],
+      "control_median_ns": 112923178,
+      "candidate_median_ns": 54179685,
+      "component_speedup": 2.0842346720915783,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 3,
+      "verification_rows": 4,
+      "control_ns": [
+        150325369,
+        151380906,
+        150942872,
+        151075764,
+        150689720
+      ],
+      "candidate_ns": [
+        56546820,
+        60465033,
+        51846780,
+        57246873,
+        59098606
+      ],
+      "control_median_ns": 150942872,
+      "candidate_median_ns": 57246873,
+      "component_speedup": 2.63670073298152,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 4,
+      "verification_rows": 5,
+      "control_ns": [
+        187703000,
+        189100599,
+        188285924,
+        188588376,
+        187989033
+      ],
+      "candidate_ns": [
+        66874704,
+        70438846,
+        62599477,
+        69640501,
+        69745431
+      ],
+      "control_median_ns": 188285924,
+      "candidate_median_ns": 69640501,
+      "component_speedup": 2.7036842253619056,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 5,
+      "verification_rows": 6,
+      "control_ns": [
+        225506953,
+        226717532,
+        225877444,
+        225928185,
+        225488404
+      ],
+      "candidate_ns": [
+        69999063,
+        72429738,
+        64636379,
+        76420363,
+        71334471
+      ],
+      "control_median_ns": 225877444,
+      "candidate_median_ns": 71334471,
+      "component_speedup": 3.166455723769228,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 6,
+      "verification_rows": 7,
+      "control_ns": [
+        263194237,
+        264636134,
+        263593638,
+        263429107,
+        263195297
+      ],
+      "candidate_ns": [
+        72543968,
+        77054147,
+        66602901,
+        79692942,
+        71646813
+      ],
+      "control_median_ns": 263429107,
+      "candidate_median_ns": 72543968,
+      "component_speedup": 3.631302701831805,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 7,
+      "verification_rows": 8,
+      "control_ns": [
+        300231983,
+        302260267,
+        300705797,
+        303586217,
+        300522859
+      ],
+      "candidate_ns": [
+        75947940,
+        77959041,
+        68550403,
+        80473667,
+        74260219
+      ],
+      "control_median_ns": 300705797,
+      "candidate_median_ns": 75947940,
+      "component_speedup": 3.959367390346598,
+      "candidate_wins": 5
+    },
+    {
+      "draft_tokens": 8,
+      "verification_rows": 9,
+      "control_ns": [
+        338044008,
+        339836270,
+        338456151,
+        338441482,
+        338053217
+      ],
+      "candidate_ns": [
+        82302649,
+        85659969,
+        74882742,
+        77221307,
+        82869262
+      ],
+      "control_median_ns": 338441482,
+      "candidate_median_ns": 82302649,
+      "component_speedup": 4.1121578237414935,
+      "candidate_wins": 5
+    }
+  ],
+  "performance_claim": false,
+  "integration_authorized": false,
+  "violations": []
+}

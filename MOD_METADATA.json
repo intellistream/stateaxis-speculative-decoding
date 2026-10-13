@@ -37,7 +37,7 @@
   },
   "evidence": {
     "qualification": "component-positive-prompt-lookup-upper-bound-negative-online-unqualified",
-    "latest_result": "evidence/ecpa-contract-20261011/RESULT.json",
+    "latest_result": "evidence/historical-v163-v168/qwen14b-suffix-decoding-b32-bound-v168-r01.json",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
